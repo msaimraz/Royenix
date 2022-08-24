@@ -75,8 +75,8 @@
 									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
 										aria-expanded="false"></i>
 									<ul class="nav__dropdown-menu">
-										<li><a href="./portfolio.html">Portfolio</a></li>
-										<li><a href="./services.html">Services</a></li>
+										<!-- <li><a href="./portfolio.html">Portfolio</a></li> -->
+										<li><a href="./scaffolding.html">Scaffolding</a></li>
 										<li><a href="./single-service.html">Single Service</a></li>
 
 									</ul>
@@ -84,17 +84,20 @@
 								<li>
 									<a href="./contact.html" aria-haspopup="true">Contact Us</a>
 								</li>
+	<div id="google_translate_element"></div>
+								
 							</ul>
 							<!-- end menu -->
+							
 
 							<!-- Mobile Search -->
-							<div class="nav__search-mobile d-lg-none">
+							<!-- <div class="nav__search-mobile d-lg-none">
 								<form role="search" method="get" class="search-form relative">
 									<input type="search" class="search-input" placeholder="Search" value="" name="s">
 									<button type="submit" class="search-button" aria-label="Search button"><i
 											class="ui-search search-icon"></i></button>
 								</form>
-							</div>
+							</div> -->
 
 							<!-- Mobile Phone -->
 							<div class="nav__phone nav__phone--mobile d-lg-none">
@@ -717,7 +720,14 @@
 		</div> <!-- end content wrapper -->
 	</main> <!-- end main wrapper -->
 
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+		}
+	</script>
 
+	<script type="text/javascript"
+		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	<!-- jQuery Scripts -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
