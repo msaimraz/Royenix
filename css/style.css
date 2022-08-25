@@ -36,15 +36,15 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #fdf0b2;
+  background-color: #e6f8f5;
 }
 
 ::-webkit-selection {
-  background-color: #fdf0b2;
+  background-color: #e6f8f5;
 }
 
 ::selection {
-  background-color: #fdf0b2;
+  background-color: #e6f8f5;
 }
 
 :focus {
@@ -6605,6 +6605,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
