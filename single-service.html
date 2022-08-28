@@ -213,95 +213,122 @@
 					<h3 class="call-to-action__title">
 						We'll help you to build your future.
 					</h3>
-					<a href="#" class="btn btn--lg btn--color">
+					<a href="#" class="btn btn--lg btn--color" data-toggle="modal" data-target="#myModal">
 						<span>Let’s Work Together</span>
 					</a>
 				</div>
-				<div class="col-lg-7 offset-lg-2 text-center">
+				</div>
+				<div class="modal fade" id="myModal">
+					<div class="modal-dialog modal-lg modal-dialog-centered text-center">
+						<div class="modal-content" style="background-color: #f9f9f9">
+
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title call-to-action__title">You are few more steps away</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<!-- Modal body -->
+							<div class="modal-body">
+								<form id="Rider-form" class="contact-form material" method="post" action="#">
+
+									<div class="row">
+										<div class="col-lg-6">
+											<!-- Name -->
+											<div class="material__form-group form-group">
+												<input type="text" name="name" id="name"
+													class="form-input material__input" required="">
+												<label for="name" class="material__label">Name
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<!-- contact -->
+											<div class="material__form-group form-group">
+												<input type="number" name="contact" id="contact"
+													class="form-input material__input" required="">
+												<label for="contact" class="material__label">Contact No.
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<!-- Email -->
+											<div class="material__form-group form-group">
+												<input type="text" name="nationality" id="nationality"
+													class="form-input material__input" required="">
+												<label for="nationality" class="material__label">Nationality
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<!-- QID No -->
+											<div class="material__form-group form-group">
+												<input type="number" name="qid-no" id="qid-no"
+													class="form-input material__input" required="">
+												<label for="qid-no" class="material__label">QID No.
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<!-- QID Expiry -->
+											<div class="material__form-group form-group">
+												<input type="date" name="qid-expiry" id="qid-expiry"
+													class="form-input material__input" required="">
+												<label for="qid-expiry" class="material__label" style="top: -20px;">QID
+													Expiry
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<!-- Driving License Expiry -->
+											<div class="material__form-group form-group">
+												<input type="date" name="driving-license-exp" id="driving-license-exp"
+													class="form-input material__input" required="">
+												<label for="driving-license-exp" class="material__label"
+													style="top: -20px;">Driving
+													License Expiry
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+										</div>
+									</div>
+
+
+
+									<input type="submit" class="btn btn--lg btn--color btn--button" value="Submit"
+										id="submit-message">
+									<div id="msg" class="message"></div>
+								</form>
+							</div>
+
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<a href="#" class="btn btn--md btn--dark" data-dismiss="modal">
+									<span>Close</span>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-lg-7 offset-lg-2 text-center">
 					<h2 class="section-title">Join Us</h2>
 					<p class="mb-40">You are few more steps away from Registration.</p>
 
-					<!-- Contact Form -->
-					<form id="Rider-form" class="contact-form material" method="post" action="#">
-
-						<div class="row">
-							<div class="col-lg-6">
-								<!-- Name -->
-								<div class="material__form-group form-group">
-									<input type="text" name="name" id="name" class="form-input material__input"
-										required="">
-									<label for="name" class="material__label">Name
-										<abbr title="required" class="required">*</abbr>
-									</label>
-									<span class="material__underline"></span>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<!-- contact -->
-								<div class="material__form-group form-group">
-									<input type="number" name="contact" id="contact" class="form-input material__input"
-										required="">
-									<label for="contact" class="material__label">Contact No.
-										<abbr title="required" class="required">*</abbr>
-									</label>
-									<span class="material__underline"></span>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<!-- Email -->
-								<div class="material__form-group form-group">
-									<input type="text" name="nationality" id="nationality"
-										class="form-input material__input" required="">
-									<label for="nationality" class="material__label">Nationality
-										<abbr title="required" class="required">*</abbr>
-									</label>
-									<span class="material__underline"></span>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<!-- QID No -->
-								<div class="material__form-group form-group">
-									<input type="number" name="qid-no" id="qid-no" class="form-input material__input"
-										required="">
-									<label for="qid-no" class="material__label">QID No.
-										<abbr title="required" class="required">*</abbr>
-									</label>
-									<span class="material__underline"></span>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<!-- QID Expiry -->
-								<div class="material__form-group form-group">
-									<input type="date" name="qid-expiry" id="qid-expiry"
-										class="form-input material__input" required="">
-									<label for="qid-expiry" class="material__label" style="top: -20px;">QID Expiry
-										<abbr title="required" class="required">*</abbr>
-									</label>
-									<span class="material__underline"></span>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<!-- Driving License Expiry -->
-								<div class="material__form-group form-group">
-									<input type="date" name="driving-license-exp" id="driving-license-exp"
-										class="form-input material__input" required="">
-									<label for="driving-license-exp" class="material__label" style="top: -20px;">Driving
-										License Expiry
-										<abbr title="required" class="required">*</abbr>
-									</label>
-									<span class="material__underline"></span>
-								</div>
-							</div>
-						</div>
-
-
-
-						<input type="submit" class="btn btn--lg btn--color btn--button" value="Submit"
-							id="submit-message">
-						<div id="msg" class="message"></div>
-					</form>
-				</div>
-			</div>
+					
+				</div> -->
+			<!-- </div> -->
 
 
 			<!-- Footer -->
