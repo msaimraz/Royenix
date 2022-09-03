@@ -2774,13 +2774,7 @@ img.mfp-img {
   background-color: #f9f9f9;
   padding: 96px 15px;
   border-radius: 5px;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  
 }
 
 .call-to-action__title {
@@ -6233,11 +6227,11 @@ input[type="number"] {
 }
 
 /* Partner Slider */
-@keyframes scroll {
-  0% {
+@keyframes scroll{
+  0%{
     transform: translateX(0);
   }
-  100% {
+  100%{
     transform: translateX(calc(-200px * 4));
   }
 }
