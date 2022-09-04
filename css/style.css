@@ -2661,6 +2661,17 @@ img.mfp-img {
   margin-bottom: 24px;
 }
 
+.process__title__rider,
+.process__text__rider {
+  color: #D4D3C4;
+}
+
+.process__title__rider {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
 /*-------------------------------------------------------*/
 /* Testimonials
 /*-------------------------------------------------------*/
