@@ -4806,7 +4806,7 @@ iframe {
 }
 
 .footer__widgets a {
-  color: #868686;
+  color: #fff;
 }
 
 .footer__widgets a:hover {
@@ -4884,7 +4884,7 @@ iframe {
 .copyright {
   display: inline-block;
   font-size: 14px;
-  color: #868686;
+  color: #fff;
 }
 
 .copyright a {
