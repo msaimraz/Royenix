@@ -16,13 +16,12 @@
 	<meta name="author" content="M Saim Raza">
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!-- Css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font-icons.css" />
 	<link rel="stylesheet" href="revolution/css/settings.css" />
 	<link rel="stylesheet" href="css/style.css" />
-
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -305,7 +304,7 @@
 			</div>
 
 			<!-- Intro -->
-			<section class="section-wrap animate__animated animate__bounceInUp animate__delay-2s">
+			<section class="section-wrap" data-aos="zoom-in">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-10">
@@ -325,10 +324,10 @@
 			</section> <!-- end intro -->
 
 			<!-- Services -->
-			<section class="section-wrap pt-0 pb-0">
+			<section class="section-wrap pt-0 pb-0" >
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-6 col-lg-6">
+						<div class="col-xl-6 col-lg-6" data-aos="fade-right">
 							<div class="service-1">
 								<a href="#" class="service-1__url hover-scale">
 									<img src="img/services/v-2/3.jpg" class="service-1__img" alt="">
@@ -356,7 +355,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-6 col-lg-6">
+						<div class="col-xl-6 col-lg-6" data-aos="fade-left">
 							<div class="service-1">
 								<a href="#" class="service-1__url hover-scale">
 									<img src="img/services/single/Insurance.jpg" class="service-1__img" alt="">
@@ -385,7 +384,7 @@
 			</section> <!-- end services -->
 
 			<!-- Portfolio -->
-			<section class="section-wrap pt-48">
+			<section class="section-wrap pt-48" data-aos="slide-up">
 				<div class="container">
 					<div class="title-row mb-48">
 						<p class="subtitle">Portfolio</p>
@@ -393,7 +392,7 @@
 					</div>
 
 					<div class="projects">
-						<div class="project-1">
+						<div class="project-1" data-aos="fade-right">
 							<div class="project-1__container">
 								<div class="project__img-holder hover-scale">
 									<!-- <a href="portfolio-single.html"> -->
@@ -416,7 +415,7 @@
 							</div>
 						</div> <!-- end project -->
 
-						<div class="project-1">
+						<div class="project-1" data-aos="fade-left">
 							<div class="project-1__container">
 								<div class="project__img-holder hover-scale">
 									<!-- <a href="portfolio-single.html"> -->
@@ -444,7 +443,8 @@
 
 
 			<!-- Testimonials -->
-			<section class="section-wrap bg-dark-overlay" style="background-image: url(img/testimonials/bg.jpg);">
+			<section class="section-wrap bg-dark-overlay" style="background-image: url(img/testimonials/bg.jpg);"
+				data-aos="slide-up">
 				<div class="container">
 					<div class="title-row text-center">
 						<p class="subtitle">Testimonials</p>
@@ -504,7 +504,7 @@
 			</section> <!-- end testimonials -->
 
 			<!-- Contact -->
-			<section class="section-wrap">
+			<section class="section-wrap" data-aos="slide-up">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 mb-lg-48">
@@ -671,7 +671,13 @@
 	<script src="js/gmap3.min.js"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/scripts.js"></script>
-
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 300,
+			duration: 1000
+		});
+	</script>
 
 	<!-- Rev Slider Offline Scripts -->
 	<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
