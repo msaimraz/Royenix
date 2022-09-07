@@ -1,45 +1,20 @@
-<?php 
-	if($_POST) {
+<?php
+//get data from form  
 
-		$to = "msraza.02@gmail.com"; // Your email here
-		$subject = 'Message from Royenix'; // Subject message here
+$name = $_POST['name'];
+$email= $_POST['email'];
+$title= $_POST['subject'];
+$message= $_POST['message'];
 
-	}
+$to = "msraza.02@gmail.com";
+$subject = "Mail From Royenix";
 
-	//Send mail function
-	function send_mail($to,$subject,$message,$headers){
-		if(@mail($to,$subject,$message,$headers)){
-			echo json_encode(array('info' => 'success', 'msg' => "Your message has been sent. Thank you!"));
-		} else {
-			echo json_encode(array('info' => 'error', 'msg' => "Error, your message hasn't been sent"));
-		}
-	}
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n  Subject = " . $title . "\r\n Message =" . $message;
+$headers = "From: noreply@royenix.com" . "\r\n" .
+"CC: somebodyelse@example.com";
 
-	//Sanitize input data, remove all illegal characters	
-	$name    = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-	$email   = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-	$subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-	$website = filter_var($_POST['website'], FILTER_SANITIZE_STRING);
-	$comment = filter_var($_POST['comment'], FILTER_SANITIZE_STRING);
-
-	//Validation
-	if($name == '') {
-		echo json_encode(array('info' => 'error', 'msg' => "Please enter your name."));
-		exit();
-	}
-	if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-		echo json_encode(array('info' => 'error', 'msg' => "Please enter valid e-mail."));
-		exit();
-	}
-	if($comment == ''){
-		echo json_encode(array('info' => 'error', 'msg' => "Please enter your message."));
-		exit();
-	}
-
-	//Send Mail
-	$headers = 'From: ' . $email .''. "\r\n".
-	'Reply-To: '.$email.'' . "\r\n" .
-	'X-Mailer: PHP/' . phpversion();
-
-	send_mail($to, $subject, $comment . "\r\n\n"  .'Name: '.$name. "\r\n" .'Email: '.$email, $headers);
-?>
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
+header("#");
