@@ -7,7 +7,7 @@ $title= $_POST['subject'];
 $message= $_POST['message'];
 
 $to = "msraza.02@gmail.com";
-$subject = "Mail From Royenix";
+$subject = "Mail From Royenix | Contact ";
 
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n  Subject = " . $title . "\r\n Message =" . $message;
 $headers = "From: noreply@royenix.com" . "\r\n" .
