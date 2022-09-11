@@ -8,14 +8,14 @@ $qidNo = $_POST['qidNo'];
 $qidExpiry = $_POST['qidExpiry'];
 $drivingLicenseExp = $_POST['drivingLicenseExp'];
 
-$to = "msraza.02@gmail.com";
+$to = "info@royenix.com";
 $subject = "Mail From Royenix | Rider ";
 
 $txt = "Name = " . $name . "\r\n  Contact No = " . $contact . "\r\n  Nationality = " . $nationality . "\r\n  QID No = " . $qidNo . "\r\n  QID Expiry = " . $qidExpiry . "\r\n Driving License Expiry = " . $drivingLicenseExp;
-$headers = "From: rider@royenix.com" . "\r\n" .
-    "CC: somebodyelse@example.com";
+$headers = "From: noreply@royenix.com" . "\r\n" .
+    "CC: md@royenix.com";
 
-if ($email != NULL) {
+if ($contact != NULL) {
     mail($to, $subject, $txt, $headers);
 }
 //redirect
